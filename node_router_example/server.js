@@ -15,8 +15,8 @@ var hostname = "localhost";
 var port = 3000;
 
 app.use('/dishes', dishes);
-//app.use('/leadership', leadership);
-//app.use('/promotions', promotions);
+app.use('/leadership', leadership);
+app.use('/promotions', promotions);
 
 app.listen(port, hostname, function(){
   console.log("server is running!!");
